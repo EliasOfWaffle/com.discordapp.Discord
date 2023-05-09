@@ -1,5 +1,5 @@
 {
-    "app-id": "com.discordapp.Discord",
+    "app-id": "com.discordapp.Discord-Canary",
     "base": "org.electronjs.Electron2.BaseApp",
     "base-version": "22.08",
     "runtime": "org.freedesktop.Platform",
@@ -13,6 +13,7 @@
     "finish-args": [
         "--share=ipc",
         "--socket=x11",
+        "--socket=wayland",
         "--socket=pulseaudio",
         "--share=network",
         "--device=all",
@@ -66,8 +67,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://dl.discordapp.net/apps/linux/0.0.27/discord-0.0.27.tar.gz",
-                    "sha256": "e9f1da88f05cbfb4d0561f936ad20461767f2f03e69c2994fd059728581447b5",
+                    "url": "https://dl-canary.discordapp.net/apps/linux/0.0.151/discord-canary-0.0.151.tar.gz",
+                    "sha256": "64dfa5106b526a3818b323281919b24d90a95065666fd2ca815bfcf4d0389bb5",
                     "strip-components": 0,
                     "x-checker-data": {
                         "type": "rotating-url",
@@ -104,8 +105,8 @@
                     "sources": [
                         {
                             "type": "archive",
-                            "url": "https://github.com/pciutils/pciutils/archive/v3.9.0.tar.gz",
-                            "sha256": "17829b1fc3ef2a022f2b0a6c4d7a686b53a2fb0233951c31f9344e0abc4034bf",
+                            "url": "https://github.com/pciutils/pciutils/archive/v3.10.0.tar.gz",
+                            "sha256": "e579d87f1afe2196db7db648857023f80adb500e8194c4488c8b47f9a238c1c6",
                             "x-checker-data": {
                                 "type": "anitya",
                                 "project-id": 2605,
